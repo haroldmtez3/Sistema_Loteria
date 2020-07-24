@@ -58,6 +58,12 @@
     <Compile Include="Mantenimientos\Abraham_Prueba.Designer.cs">
       <DependentUpon>Abraham_Prueba.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\Delphin Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Delphin Prueba.Designer.cs">
+      <DependentUpon>Delphin Prueba.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
