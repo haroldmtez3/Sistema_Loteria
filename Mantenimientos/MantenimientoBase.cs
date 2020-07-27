@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_Loteria
+namespace Sistema_Loteria.Mantenimientos
 {
-    public partial class Form1 : Form
+    public partial class MantenimientoBase : Form
     {
-        public Form1()
+        public MantenimientoBase()
         {
             InitializeComponent();
         }
