@@ -52,11 +52,17 @@
     <Compile Include="Mantenimientos\Abraham_Prueba.Designer.cs">
       <DependentUpon>Abraham_Prueba.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimientos\Delphin Prueba.cs">
+    <Compile Include="Mantenimientos\Consorcio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mantenimientos\Delphin Prueba.Designer.cs">
-      <DependentUpon>Delphin Prueba.cs</DependentUpon>
+    <Compile Include="Mantenimientos\Consorcio.Designer.cs">
+      <DependentUpon>Consorcio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Terminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Terminal.Designer.cs">
+      <DependentUpon>Terminal.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\Empleado.cs">
       <SubType>Form</SubType>
@@ -78,8 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Mantenimientos\Consorcio.resx">
+      <DependentUpon>Consorcio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\MantenimientoBase.resx">
       <DependentUpon>MantenimientoBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Terminal.resx">
+      <DependentUpon>Terminal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\TipoLoteria.resx">
       <DependentUpon>TipoLoteria.cs</DependentUpon>

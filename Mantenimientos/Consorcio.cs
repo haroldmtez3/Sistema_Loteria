@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Loteria.Mantenimientos
 {
-    public partial class Delphin_Prueba : Form
+    public partial class Consorcio : MantenimientoBase
     {
-        public Delphin_Prueba()
+        public Consorcio()
         {
             InitializeComponent();
         }
