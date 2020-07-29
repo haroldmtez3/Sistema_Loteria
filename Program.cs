@@ -16,7 +16,7 @@ namespace Sistema_Loteria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Mantenimientos.TipoLoteria());
+            Application.Run(new Mantenimientos.Empleado());
         }
     }
 }

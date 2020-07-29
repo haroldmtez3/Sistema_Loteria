@@ -42,23 +42,27 @@
             this.FechaDeNacimientoLabel = new System.Windows.Forms.Label();
             this.FechaIngresadoLabel = new System.Windows.Forms.Label();
             this.FechaIngresadoDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.IdDireccionLabel = new System.Windows.Forms.Label();
+            this.IdDireccionTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(57, 494);
+            this.button1.Location = new System.Drawing.Point(57, 558);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(187, 494);
+            this.button2.Location = new System.Drawing.Point(187, 558);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(447, 494);
+            this.button3.Location = new System.Drawing.Point(447, 558);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(317, 494);
+            this.button4.Location = new System.Drawing.Point(317, 558);
             // 
             // TipodeEmpleadoCombobox
             // 
@@ -66,7 +70,7 @@
             this.TipodeEmpleadoCombobox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TipodeEmpleadoCombobox.ForeColor = System.Drawing.Color.White;
             this.TipodeEmpleadoCombobox.FormattingEnabled = true;
-            this.TipodeEmpleadoCombobox.Location = new System.Drawing.Point(208, 370);
+            this.TipodeEmpleadoCombobox.Location = new System.Drawing.Point(208, 434);
             this.TipodeEmpleadoCombobox.Name = "TipodeEmpleadoCombobox";
             this.TipodeEmpleadoCombobox.Size = new System.Drawing.Size(247, 27);
             this.TipodeEmpleadoCombobox.TabIndex = 5;
@@ -96,7 +100,7 @@
             this.TipoDeEmpleadoLabel.AutoSize = true;
             this.TipoDeEmpleadoLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TipoDeEmpleadoLabel.ForeColor = System.Drawing.Color.White;
-            this.TipoDeEmpleadoLabel.Location = new System.Drawing.Point(204, 348);
+            this.TipoDeEmpleadoLabel.Location = new System.Drawing.Point(204, 412);
             this.TipoDeEmpleadoLabel.Name = "TipoDeEmpleadoLabel";
             this.TipoDeEmpleadoLabel.Size = new System.Drawing.Size(133, 19);
             this.TipoDeEmpleadoLabel.TabIndex = 7;
@@ -190,7 +194,7 @@
             this.FechaIngresadoLabel.AutoSize = true;
             this.FechaIngresadoLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaIngresadoLabel.ForeColor = System.Drawing.Color.White;
-            this.FechaIngresadoLabel.Location = new System.Drawing.Point(204, 410);
+            this.FechaIngresadoLabel.Location = new System.Drawing.Point(204, 474);
             this.FechaIngresadoLabel.Name = "FechaIngresadoLabel";
             this.FechaIngresadoLabel.Size = new System.Drawing.Size(128, 19);
             this.FechaIngresadoLabel.TabIndex = 11;
@@ -199,16 +203,39 @@
             // FechaIngresadoDateTimePicker
             // 
             this.FechaIngresadoDateTimePicker.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FechaIngresadoDateTimePicker.Location = new System.Drawing.Point(208, 432);
+            this.FechaIngresadoDateTimePicker.Location = new System.Drawing.Point(208, 496);
             this.FechaIngresadoDateTimePicker.Name = "FechaIngresadoDateTimePicker";
             this.FechaIngresadoDateTimePicker.Size = new System.Drawing.Size(247, 26);
             this.FechaIngresadoDateTimePicker.TabIndex = 8;
+            // 
+            // IdDireccionLabel
+            // 
+            this.IdDireccionLabel.AutoSize = true;
+            this.IdDireccionLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdDireccionLabel.ForeColor = System.Drawing.Color.White;
+            this.IdDireccionLabel.Location = new System.Drawing.Point(204, 350);
+            this.IdDireccionLabel.Name = "IdDireccionLabel";
+            this.IdDireccionLabel.Size = new System.Drawing.Size(97, 19);
+            this.IdDireccionLabel.TabIndex = 13;
+            this.IdDireccionLabel.Text = "Id Dirreccion";
+            // 
+            // IdDireccionTextbox
+            // 
+            this.IdDireccionTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(58)))), ((int)(((byte)(87)))));
+            this.IdDireccionTextbox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdDireccionTextbox.ForeColor = System.Drawing.Color.White;
+            this.IdDireccionTextbox.Location = new System.Drawing.Point(208, 372);
+            this.IdDireccionTextbox.Name = "IdDireccionTextbox";
+            this.IdDireccionTextbox.Size = new System.Drawing.Size(247, 26);
+            this.IdDireccionTextbox.TabIndex = 12;
             // 
             // Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.IdDireccionLabel);
+            this.Controls.Add(this.IdDireccionTextbox);
             this.Controls.Add(this.FechaIngresadoLabel);
             this.Controls.Add(this.FechaDeNacimientoLabel);
             this.Controls.Add(this.FechaIngresadoDateTimePicker);
@@ -225,10 +252,7 @@
             this.Controls.Add(this.TipodeEmpleadoCombobox);
             this.Name = "Empleado";
             this.Text = "Empleado";
-            this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.button2, 0);
-            this.Controls.SetChildIndex(this.button4, 0);
-            this.Controls.SetChildIndex(this.button3, 0);
+            this.Load += new System.EventHandler(this.Empleado_Load);
             this.Controls.SetChildIndex(this.TipodeEmpleadoCombobox, 0);
             this.Controls.SetChildIndex(this.NombreTextBox, 0);
             this.Controls.SetChildIndex(this.ApellidoTextBox, 0);
@@ -243,6 +267,12 @@
             this.Controls.SetChildIndex(this.FechaIngresadoDateTimePicker, 0);
             this.Controls.SetChildIndex(this.FechaDeNacimientoLabel, 0);
             this.Controls.SetChildIndex(this.FechaIngresadoLabel, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.IdDireccionTextbox, 0);
+            this.Controls.SetChildIndex(this.IdDireccionLabel, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +294,7 @@
         private System.Windows.Forms.Label FechaDeNacimientoLabel;
         private System.Windows.Forms.Label FechaIngresadoLabel;
         private System.Windows.Forms.DateTimePicker FechaIngresadoDateTimePicker;
+        private System.Windows.Forms.Label IdDireccionLabel;
+        private System.Windows.Forms.TextBox IdDireccionTextbox;
     }
 }
